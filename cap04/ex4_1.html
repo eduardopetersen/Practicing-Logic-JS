@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Vamos construir um exemplo de uso das condições e operadores relacionais. A página exibida na Figura 3.2 faz a leitura do nome e das notas de um aluno, apresenta a média e uma mensagem para o aluno: “Parabéns ... Você foi aprovado(a)!” ou, então, “Ops... Você foi reprovado(a).”. A situação de aprovado ou reprovado é deÓnida pela média das notas, que deve ser 7.0 ou superior para aprovação. Caso a nota seja inferior a 7.0, a mensagem indicando a reprovação deve ser exibida. Também faremos nesse exemplo a aplicação de um estilo na mensagem
+que indica a situação do aluno. Esse recurso refere-se à camada CSS (Cascading Style Sheets) da construção de páginas web e também pode ser manipulado por programas JavaScript. A mensagem de aprovação é exibida em azul e de reprovação, em vermelho.-->
+<body>   
+    <h1>Programa Situação do Aluno</h1>
+    <form>
+        <p>
+            Nome do Aluno:
+            <input type="text" id="inNome">
+        </p>
+        <p>
+            1ª Nota: 
+            <input type="text" id="inNota1" step="0.01">
+        </p>
+        <p>
+            2ª Nota: 
+            <input type="text" id="inNota2" step="0.01">
+        </p>
+        <input type="submit" value="Exibir Média e Situação" id="btResultado">
+    </form>
+    <h2 id="outMedia"></h2>
+    <h2 id="outSituacao"></h2>
+    <script src="./ex4_1.js"></script>
+</body>
+</html>
